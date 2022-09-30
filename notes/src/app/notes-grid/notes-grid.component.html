@@ -1,0 +1,53 @@
+<div class="container pad-0">
+  <h1 class="heading">Notes</h1>
+  <div
+    class="
+      col-lg-6
+      col-md-6
+      col-sm-6
+      col-xs-12
+      col-lg-offset-3
+      col-md-offset-3
+      col-sm-offset-3
+      bg
+      pad-0
+    "
+    style="color: #fff"
+  >
+    <section class="content-section">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>S.No.</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Update</th>
+            <th>Delete</th>
+
+          </tr>
+        </thead>
+        <tbody *ngFor="let item of notesData; let i = index">
+          <tr>
+             <td>{{ item.noteid}}</td>
+            <td>{{ item.title}}</td>
+            <td>{{ item.noteData}}</td>
+            <td><i
+              class="material-icons update star-icon"
+              title="Update"
+            >
+             <!-- (click)="updateData(item.id)"  -->
+              create
+            </i></td>
+            <td><i
+              class="material-icons delete star-icon"
+              title="Delete"
+              >
+              <!-- (click)="deleteData(item.id)"  -->
+              delete
+            </i></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</div>

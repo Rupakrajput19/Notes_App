@@ -1,0 +1,20 @@
+<div class="dialog_box">
+<h1 mat-dialog-title class="heading">Add Your Notes</h1>
+<div mat-dialog-content>
+ <form class="example-form" autocomplete="off">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Notes Title</mat-label>
+    <input matInput placeholder="Ex. Pizza" name="title" [(ngModel)]="title">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Notes Information</mat-label>
+    <textarea matInput placeholder="Ex. It makes me feel..." name="notesData" [(ngModel)]="notesData"></textarea>
+  </mat-form-field>
+</form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close class="dg_btn">Close</button>
+  <button mat-button class="dg_btn" (click)="saveNotes()">ADD</button>
+</div>
+</div>
