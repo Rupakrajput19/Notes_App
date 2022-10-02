@@ -1,0 +1,29 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.example-full-width {
+  width: 100%;
+}
+.dialog_box{
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+}
+.heading{
+  margin: 0 0 40px 0;
+  text-align: center;
+  text-decoration: underline;
+}
+.dg_btn{
+  margin: 0 0 20px 0;
+  box-shadow: 1px 1px 5px #fff;
+}
+.dg_btn:nth-child(2){
+  margin: 0 20px 20px;
+}
+.dg_btn:hover{
+  transition: 0.5s;
+  box-shadow: none;
+}
