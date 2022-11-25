@@ -1,0 +1,20 @@
+<form class="example-form" autocomplete="off">
+<div id="dialog_box">
+<h1 mat-dialog-title class="heading">Add Your Notes</h1>
+<div mat-dialog-content>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label class="label">Notes Title</mat-label>
+    <input class="input" matInput placeholder="Ex. Total Expense" name="title" [(ngModel)]="title" minlength="1" maxlength="30" required>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label class="label">Notes Information</mat-label>
+    <textarea class="input" matInput placeholder="Ex. The total expense in a month is more than my salary..." name="notesData" [(ngModel)]="notesData" minlength="1" maxlength="1000" required></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close class="dg_btn">Close</button>
+  <button mat-button class="dg_btn" type="submit" (click)="saveNotes()">ADD</button>
+</div>
+</div>
+</form>
